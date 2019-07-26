@@ -2328,7 +2328,7 @@ def remove_overlaps(input_mat, song_length):
             # Separate ALL annotations. In this step, we expand a row into a
             # matrix, so that there is one group of repeats per row.
             
-            tuple_of_outputs = separate_all_annotations(bw_lst_out, song_length, bw, pattern_row)
+            tuple_of_outputs = separate_anno_markers(bw_lst_out, song_length, bw, pattern_row)
             pattern_mat = tuple_of_outputs[0]
             pattern_key = tuple_of_outputs[1]
             anno_temp_lst = tuple_of_outputs[2]
